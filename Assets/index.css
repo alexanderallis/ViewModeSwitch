@@ -1,0 +1,13 @@
+.div-one{
+  display:block;
+}
+
+.div-two{
+  display:none;
+  color:red;
+}
+
+h1 {
+  color:blue;
+  font-size: 2em;
+}

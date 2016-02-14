@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:600,400' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="Assets/reset.css">
+  <link rel="stylesheet" type="text/css" href="Assets/index.css">
+</head>
+
+<body>
+
+<button id="clickOne">Click Me!</button>
+<button id="clickTwo">Click Me!</button>
+
+<div class="div-one" id="divOne">
+  <h1>This is Title One</h1>
+  <p>This is some stuff</p>
+</div>
+
+<div class="div-two" id="divTwo">
+  <h1>This is Title Two</h1>
+  <p>This is some stuff</p>
+</div>
+
+<script>
+
+var One = document.getElementById("divOne");
+var Two = document.getElementById("divTwo");
+var buttonOne = document.getElementById("clickOne");
+var buttonTwo = document.getElementById("clickTwo");
+
+buttonOne.addEventListener("click", function() {
+
+    One.style.display = "none";
+    Two.style.display = "block";
+
+});
+
+buttonTwo.addEventListener("click", function() {
+
+    One.style.display = "block";
+    Two.style.display = "none";
+});
+</script>
+
+</body>
+</html>
